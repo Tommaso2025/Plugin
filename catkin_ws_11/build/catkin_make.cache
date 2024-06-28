@@ -1,0 +1,2 @@
+ik_load
+-DCATKIN_DEVEL_PREFIX=/home/tommaso/catkin_ws_11/devel -DCMAKE_INSTALL_PREFIX=/home/tommaso/catkin_ws_11/install -G Unix Makefiles

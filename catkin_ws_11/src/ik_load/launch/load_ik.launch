@@ -1,0 +1,6 @@
+<launch>
+  <node name="load_ik" pkg="ik_load" type="ik_load" output="screen">
+    <!-- Example parameters if needed -->
+    <!-- <param name="param_name" value="param_value"/> -->
+  </node>
+</launch>
