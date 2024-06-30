@@ -16,11 +16,7 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
 )
 
-catkin_package(
-  INCLUDE_DIRS include
-  LIBRARIES ik_load
-  CATKIN_DEPENDS roscpp pluginlib geometry_msgs moveit_core moveit_kinematics kdl_kinematics_plugin
-)
+catkin_package()
 
 ## Specify additional locations of header files
 include_directories(
