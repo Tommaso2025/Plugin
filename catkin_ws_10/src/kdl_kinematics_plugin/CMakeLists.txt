@@ -80,7 +80,7 @@ install(DIRECTORY include/${PROJECT_NAME}/
 
 # Install the plugin description file to a custom directory
 install(FILES
-  plugin_description.xml
+  kdl_kinematics_plugin_description.xml
   DESTINATION share/${PROJECT_NAME}
 )
 
