@@ -28,7 +28,7 @@ int main(int argc, char** argv) {
   ros::init(argc, argv, "load_ik");
   ros::NodeHandle node_obj;
   
-  pluginlib::ClassLoader<kinematics::KinematicsBase> load_ik("kdl_kinematics_plugin", "kdl_kinematics_plugin::KDLKinematicsPlugin");
+  pluginlib::ClassLoader<kinematics::KinematicsBase> load_ik("kdl_kinematics_plugin", "kinematics::KinematicsBase");
 
   try{
     // Desired end-effector pose
@@ -59,10 +59,7 @@ int main(int argc, char** argv) {
     // Dynamically load the custom IK solver plugin
     boost::shared_ptr<kinematics::KinematicsBase> ik_sol = load_ik.createInstance("kdl_kinematics_plugin::KDLKinematicsPlugin");
     //ROS_INFO("Successfully loaded custom IK solver plugin.");
-        
-    //Dinamically load the custom IK solver
-    //boost::shared_ptr<ikinematic_plugin::iKinematicPlugin> ik_sol = ik_loader.createInstance("ik_solver_plugin::iKinematicPlugin");
-    
+     
     // Create an instance of the callback function
     kdl_kinematics_plugin::KDLKinematicsPlugin::IKCallbackFn callback_fn = solutionCallback;
     
