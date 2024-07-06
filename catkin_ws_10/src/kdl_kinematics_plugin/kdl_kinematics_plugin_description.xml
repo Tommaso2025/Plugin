@@ -1,5 +1,5 @@
-<library path="lib/libmoveit_kdl_kinematics_plugin">
-  <class name="kdl_kinematics_plugin/KDLKinematicsPlugin"
+<library path="libkdl_kinematics_plugin">
+  <class class name="kdl_kinematics_plugin/KDLKinematicsPlugin"
          type="kdl_kinematics_plugin::KDLKinematicsPlugin"
          base_class_type="kinematics::KinematicsBase">
     <description>
